@@ -36,3 +36,10 @@ Analyze retail sales data to uncover business insights using Python.
   - City-wise performance
   - Monthly revenue trends
 - Integrated SQL results with Python (Pandas)
+
+
+## Advanced SQL Analysis
+- Subqueries for high-value order detection
+- CASE statements for order segmentation
+- Top-N ranking analysis
+- SQL-based KPI calculations
