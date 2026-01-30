@@ -27,3 +27,12 @@ Analyze retail sales data to uncover business insights using Python.
 - Exploratory Data Analysis (EDA)
 - Data Visualization
 - Business Insight Generation
+
+
+## SQL Integration
+- Loaded CSV data into SQLite database
+- Performed SQL queries for:
+  - Revenue by product
+  - City-wise performance
+  - Monthly revenue trends
+- Integrated SQL results with Python (Pandas)
