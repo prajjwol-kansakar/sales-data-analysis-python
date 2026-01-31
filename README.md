@@ -4,10 +4,10 @@
 Analyze retail sales data to uncover business insights using Python.
 
 ## Tools Used
-- Python
-- Pandas
-- Matplotlib
-- VS Code
+- Python analysis
+- SQL + advanced SQL
+- Python dashboard
+- Power BI dashboard
 
 ## Key Analysis
 - Total Revenue & KPIs
