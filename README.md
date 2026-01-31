@@ -43,3 +43,8 @@ Analyze retail sales data to uncover business insights using Python.
 - CASE statements for order segmentation
 - Top-N ranking analysis
 - SQL-based KPI calculations
+
+## Python Dashboard
+- Built a Python-based KPI dashboard using Matplotlib
+- Integrated SQL queries with visual analytics
+- Displayed KPIs, trends, and performance insights
