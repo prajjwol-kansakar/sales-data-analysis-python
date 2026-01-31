@@ -1,5 +1,6 @@
 import sqlite3
 import pandas as pd
+import matplotlib.pyplot as plt
 
 df = pd.read_csv("sales_data.csv")
 
@@ -143,3 +144,44 @@ print(kpi_sql)
 
 
 conn.close()
+
+
+# bar chart - top products by revenue
+plt.figure()
+plt.bar(top_products_sql["Product"], top_products_sql["Revenue"])
+
+plt.title("Top Products by Revenue (SQL)")
+plt.xlabel("Product")
+plt.ylabel("Revenue")
+
+plt.show()
+
+
+plt.figure()
+plt.bar(city_sql["City"], city_sql["Total_Revenue"])
+
+plt.title("Revenue by City (SQL)")
+plt.xlabel("City")
+plt.ylabel("Total_Revenue")
+
+plt.show()
+
+plt.figure()
+plt.plot(monthly_sql["Month"], monthly_sql["Revenue"], marker='o')
+
+plt.title("Monthly Revenue Trend (SQL)")
+plt.xlabel("Month")
+plt.ylabel("Revenue")
+
+plt.show()
+
+segment_counts = order_segments["Order_Category"].value_counts()
+
+plt.figure()
+plt.bar(segment_counts.index, segment_counts.values)
+
+plt.title("Order Value Segmentation")
+plt.xlabel("Order Category")
+plt.ylabel("Number of Orders")
+
+plt.show()
