@@ -8,6 +8,7 @@ Analyze retail sales data to uncover business insights using Python.
 - SQL + advanced SQL
 - Python dashboard
 - Power BI dashboard
+- Tableau dashboard
 
 ## Key Analysis
 - Total Revenue & KPIs
