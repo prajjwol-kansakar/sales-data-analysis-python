@@ -49,8 +49,17 @@ Analyze retail sales data to uncover business insights using Python.
 - Built a Python-based KPI dashboard using Matplotlib
 - Integrated SQL queries with visual analytics
 - Displayed KPIs, trends, and performance insights
-  
+
+
 ## Tableau Dashboard
 - Interactive sales performance dashboard built using Tableau Public
 - KPIs, product analysis, city-wise trends, and filters
 - #Link (https://public.tableau.com/views/SalesPerformanceDashboard_17698431550120/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+## Bullion Price Web Scraper (Selenium + Python)
+A Python automation project that scrapes live bullion prices from ShareSansar, saves the data in JSON format, and captures a timestamped screenshot of the bullion price table using Selenium WebDriver.
+- Financial data monitoring
+- Web automation & testing practice
+- Data scraping portfolio project
+- Selenium automation showcase
+
