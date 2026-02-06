@@ -1,27 +1,25 @@
-from flask import Flask, render_template, jsonify, send_from_directory
-import os
+from flask import Flask, jsonify, render_template
+from scrapinggoldprice import run_scraper
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def home():
     return render_template("index.html")
 
+
+@app.route("/run-scraper")
+def run_scraper_api():
+    result = run_scraper()
+    return jsonify(result)
+
+
 @app.route("/api/bullion")
-def bullion_data():
-    return jsonify(
-        __import__("json").load(open("data/bullion.json"))
-    )
+def get_data():
+    import json
+    return jsonify(json.load(open("data/bullion.json")))
 
-@app.route("/api/latest-screenshot")
-def latest_screenshot():
-    folder = "data/screenshots"
-    files = sorted(os.listdir(folder), reverse=True)
-    return {"url": f"/screenshot/{files[0]}"} if files else {}
-
-@app.route("/screenshot/<filename>")
-def screenshot(filename):
-    return send_from_directory("data/screenshots", filename)
 
 if __name__ == "__main__":
     app.run()
